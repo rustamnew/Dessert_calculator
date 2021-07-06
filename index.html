@@ -15,42 +15,42 @@
                 <div class="main">
                     <form class="inputs">
                         <input type="text" placeholder="Название" value="Мука" id="title-input">
-                        <input type="number" placeholder="Нужный вес" value="230" id="weight-needed-input">
-                        <input type="number" placeholder="Сколько в упаковке" value="1000" id="weight-input">
-                        <input type="number" placeholder="Стоимость упаковки" value="60" id="cost-pack-input">
-                        <select id="type-input">
+                        <input type="number" placeholder="Вес" value="230" id="weight-needed-input">
+                        <input type="number" placeholder="Вес упак" value="1000" id="weight-input">
+                        <input type="number" placeholder="₽ упак" value="60" id="cost-pack-input">
+                        <!--<select id="type-input">
                             <option>Грамм</option>
                             <option>Килограмм</option>
                             <option>Милилитр</option>
                             <option>Литр</option>
-                        </select>
+                        </select>-->
                         <button type="submit" id="button">Добавить</button>
                     </form>
 
                     <div class="material">
                         <ul class="material__column" id="title">
                             <div class="column__title">
-                                Ингридиент
+                                Название
                             </div>       
                         </ul>
                         <ul class="material__column" id="weight-needed">
                             <div class="column__title">
-                                Нужный вес
+                                Вес
                             </div>
                         </ul>
                         <ul class="material__column" id="weight">
                             <div class="column__title">
-                                Вес упаковки
+                                Вес упак.
                             </div>
                         </ul>
                         <ul class="material__column" id="cost-pack">
                             <div class="column__title">
-                                Стоимость<br>упаковки
+                                ₽ упак.
                             </div>
                         </ul>
                         <ul class="material__column" id="cost">
                             <div class="column__title">
-                                Стоимость
+                                ₽ ингр.
                             </div>
                         </ul>
                     </div>
@@ -58,17 +58,17 @@
                     <div class="result">
                         <div class="result__item">
                             <div class="result__title">Подытог:</div>
-                            <div class="result__value">1000Р</div>
+                            <div class="result__value" id="subtotal"></div>
                         </div>
     
                         <div class="result__item">
                             <div class="result__title">Доп расходы:</div>
-                            <div class="result__value">100Р</div>
+                            <div class="result__value" id="addToTotal">100 ₽</div>
                         </div>
     
                         <div class="result__item">
                             <div class="result__title">Итого:</div>
-                            <div class="result__value total">1100Р</div>
+                            <div class="result__value" id="total"></div>
                         </div>
                     </div>
                 </div>

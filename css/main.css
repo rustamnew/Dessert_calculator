@@ -4,6 +4,10 @@
     font-family: Roboto;
 }
 
+html {
+    font-size: 16px;
+}
+
 ul, li {
     list-style: none;
 }
@@ -24,15 +28,28 @@ ul, li {
     height: auto;
 }
 
+.inputs {
+    display: flex;
+    justify-content: center;
+}
+
 input {
-    width: 10%
+    width: 16%;
+    height: 2rem;
+    margin-right: 5px;
+}
+input:last-child {
+    margin: 0;
 }
 
 .material {
-    padding-top: 100px;
+    padding-top: 3rem;
     display: flex;
-    padding-bottom: 10px;
+    justify-content: center;
+    padding-bottom: 3rem;
     margin-bottom: auto;
+
+    width: 100%
 }
 
 .material__column {
@@ -41,28 +58,33 @@ input {
     align-items: center;
     border: 1px solid;
     border-right: none;
+
+    width: 19%
 }
 
 .material__column:last-child {
     border-right: 1px solid;
 }
 
-.material__column li{
-    width: 100%;
-    border-bottom: 1px solid;
-    text-align: center;
-    padding: 10px 0 5px;
-}
+
 .material__column li:last-child {
     border-bottom: none;
 }
 
+.material__item{
+    width: 100%;
+    border-top: 1px solid;
+    text-align: center;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
 
 .column__title {
-    padding: 10px;
+    padding: 0.7rem;
+    min-width: 32px;
     height: 40px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid;
 
     display: flex;
     align-items: center;
@@ -72,11 +94,23 @@ input {
 
 
 
-.inputs {
-    display: flex;
-}
+
 
 .result {
     display: flex;
     justify-content: flex-end;
+    padding-right: 3rem
+}
+
+.result__item {
+    margin-right: 20px;
+}
+.result__item:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
 }
