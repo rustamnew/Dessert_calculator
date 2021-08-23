@@ -26,11 +26,22 @@ ul, li {
     flex-direction: column;
 
     height: auto;
+
+    padding-top: 20px; 
 }
 
 .inputs {
+    display: flex; 
+    flex-direction: column;
+}
+
+.row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+}
+.row:first-child {
+    flex-direction: column;
 }
 
 input {
@@ -41,6 +52,8 @@ input {
 input:last-child {
     margin: 0;
 }
+
+
 
 .material {
     padding-top: 3rem;
@@ -93,9 +106,6 @@ input:last-child {
 }
 
 
-
-
-
 .result {
     display: flex;
     justify-content: flex-end;
@@ -112,5 +122,14 @@ input:last-child {
 @media (max-width: 768px) {
     html {
         font-size: 12px;
+    }
+    .inputs button {
+        width: 60%;
+        height: 3rem;
+        margin-top: 20px;
+    }
+    .inputs input {
+        width: 50%;
+        margin-bottom: 10px;
     }
 }
